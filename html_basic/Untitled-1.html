@@ -2,7 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Awesome Portfolio</title>
+    <title>My Portfolio</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+        }
+        th {
+            background-color: #009879;
+            color: white;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #f3f3f3;
+        }
+        tr:hover {
+            background-color: #e9e9e9;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,34 +38,62 @@
             <li><a href="tweets.html">Tweets</a></li>
         </ul>
     </header>
-    
     <main>
         <article>
-            <h1>Welcome to My Digital Space</h1>
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is my first webpage for the ALX project.</p>
             
             <h2>About Me</h2>
-            <p>Hello! I'm a passionate web developer just starting my journey in the digital world. I love creating things that live on the internet.</p>
-            <p>My skills include HTML, CSS, and soon JavaScript. Every day I'm learning something new about web development.</p>
+            <p>I'm learning web development with ALX and building my skills in HTML, CSS, and JavaScript.</p>
             
-            <h2>My Projects</h2>
-            <h3>Current Work</h3>
-            <p>Right now I'm building my first portfolio website. It's exciting to see how simple HTML can create structured content.</p>
+            <h3>My Journey</h3>
+            <p>Starting from scratch, I'm progressing through the fundamentals of web development.</p>
             
-            <h3>Future Goals</h3>
-            <p>I plan to learn CSS to make my websites beautiful, and JavaScript to make them interactive. The possibilities are endless!</p>
-            
-            <h2>Check Out ALX</h2>
             <a href="https://www.alxafrica.com/" target="_blank">
                 <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" width="200">
             </a>
-            <p>Click the logo above to visit the ALX website - an amazing learning platform!</p>
+
+            <h2>Our Learning Community</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Emily</td>
+                            <td>28</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Michael</td>
+                            <td>32</td>
+                            <td>Australia</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia</td>
+                            <td>21</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </article>
-        
         <aside>
             <p>placeholder to add comment thread later</p>
         </aside>
     </main>
-    
-    <footer><p>Made by Eurypsych - <a href="https://github.com/EuryPsych" target="_blank">here</a></p></footer>
+    <footer>
+        <p>Made by Eurypsych - <a href="https://github.com/EuryPsych" target="_blank">here</a></p>
+    </footer>
 </body>
 </html>
